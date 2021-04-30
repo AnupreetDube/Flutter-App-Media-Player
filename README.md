@@ -1,3 +1,4 @@
+![](flutter.png)
 # :musical_note::movie_camera:Custom Audio-Video Player Andriod App using FLUTTER.
 
 This repository contains the code for creating a **Media Player Android Application**
