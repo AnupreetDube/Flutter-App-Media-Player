@@ -5,6 +5,6 @@ This repository contains the code for creating a **Media Player Android Applicat
 
 ### The Documentation for this Code :
 
--[x]**LinkedIn Article link:** https://www.linkedin.com/pulse/flutter-task-1-create-mood-maker-audio-video-player-kaushal-soni
+- [x] **LinkedIn Article link:** 
 
--[x]**Github Code link:** https://github.com/AnupreetDube/Flutter-App-Media-Player/
+- [x] **Github Code link:** https://github.com/AnupreetDube/Flutter-App-Media-Player/
