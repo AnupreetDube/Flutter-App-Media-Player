@@ -1,5 +1,4 @@
-# Flutter-App-Media-Player
-## Custom Audio-Video Player Andriod App using FLUTTER.
+# :fleur_de_lis:Custom Audio-Video Player Andriod App using FLUTTER.
 
 This repository contains the code for creating a **Media Player Android Application**
 
