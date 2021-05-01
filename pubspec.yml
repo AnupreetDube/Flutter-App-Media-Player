@@ -50,17 +50,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/logo.png
-    - images/front.jpg
-    - images/music.jpg
-    - images/music1.jpg
-    - images/video.png
-    - images/youtube.jpg
-    - assets/Follow the Rules... - Laurin Hunter.mp3
-    - assets/Bizzair - Bougie (Official Music Video).mp3
-    - assets/
-    - flutter_assets/smokeshishaplayfifa.mp4
-  #  - images/a_dot_ham.jpeg
+    - assets/Alone.mp3
+    - assets/Faded.mp3
+    - assets/LoveMeLikeYouDo.mp3
+    - assets/NeverBeAlone.mp3
+    - assets/Despacito.mp3
+    - assets/Eastside.mp4
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
