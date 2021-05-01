@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:music_app/main.dart';
+import 'package:Media_Player/main.dart';
 
 class SSPFVideo extends StatefulWidget {
   SSPFVideo() : super();
@@ -19,9 +19,7 @@ class SSPFState extends State<SSPFVideo> {
   @override
   void initState() {
     _controller =
-        VideoPlayerController.asset('flutter_assets/smokeshishaplayfifa.mp4');
-    /*VideoPlayerController.network(
-            'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4');*/
+        VideoPlayerController.asset('flutter_assets/Eastside.mp4');
 
     _initializeVideoPlayerFuture = _controller.initialize();
     _controller.setLooping(true);
@@ -44,7 +42,7 @@ class SSPFState extends State<SSPFVideo> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Smoke Shisha Play Fifa"),
+          title: Text("Eastside - Halsey, Benny"),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.arrow_back_ios),
