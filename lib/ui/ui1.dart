@@ -2,7 +2,7 @@ import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:music_app/main.dart';
+import 'package:Media_Player/main.dart';
 
 class ChewieDemo extends StatefulWidget {
   ChewieDemo({this.title = 'Demo butterfly video'});
@@ -31,8 +31,6 @@ class _ChewieDemoState extends State<ChewieDemo> {
     _chewieController = ChewieController(
       videoPlayerController: _videoPlayerController1,
       aspectRatio: 3 / 2,
-      //autoPlay: true,
-      //looping: true,
     );
   }
 
