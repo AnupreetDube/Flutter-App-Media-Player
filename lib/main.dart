@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:audioplayers/audio_cache.dart';
-import 'ui/butterfly.dart';
-import 'ui/sspf.dart';
+import 'ui/ui1.dart';
+import 'ui/ui2.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,20 +19,20 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  "images/front.jpg",
+                  "assets/MediaPlayerLOGO.png",
                   fit: BoxFit.cover,
                 ),
                 Text(
-                  "Welcome to Raaga !",
+                  "FLUTTER Media Player",
                   style: TextStyle(
-                    color: Colors.purple,
-                    fontSize: 25,
+                    color: Colors.blue,
+                    fontSize: 30,
                   ),
                 ),
                 Text(
-                  "Experience the inner you",
+                  "Music that soothes your soul...",
                   style: TextStyle(
-                    color: Colors.cyan,
+                    color: Colors.black,
                     fontStyle: FontStyle.italic,
                   ),
                 ),
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => MainPage()),
                     );
                   },
-                  color: Colors.purple,
+                  color: Colors.amber,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50),
                     side: BorderSide(
@@ -52,14 +52,13 @@ class MyApp extends StatelessWidget {
                   ),
                   child: Icon(
                     Icons.arrow_forward,
-                    color: Colors.cyan,
+                    color: Colors.amber,
                   ),
                 )
               ],
             ),
           ),
         ),
-        //body: ,
       ),
     );
   }
@@ -74,7 +73,7 @@ class MainPage extends StatelessWidget {
           backgroundColor: Colors.black,
           appBar: AppBar(
             backgroundColor: Colors.black,
-            leading: Image.asset('images/front.jpg'),
+            leading: Image.asset('images/MediaPlayerLOGO.jpg'),
             actions: <Widget>[
               IconButton(
                 icon: Icon(Icons.arrow_back_ios),
@@ -93,7 +92,7 @@ class MainPage extends StatelessWidget {
               ),
             ],
             title: Text(
-              "Raaga",
+              "Media Player",
             ),
           ),
           body: Container(
@@ -112,7 +111,7 @@ class MainPage extends StatelessWidget {
                   child: Card(
                     shadowColor: Colors.white,
                     child: Image.asset(
-                      "images/logo.png",
+                      "assets/MediaPlayer.png",
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -127,7 +126,7 @@ class MainPage extends StatelessWidget {
                   child: Card(
                     shadowColor: Colors.white,
                     child: Image.asset(
-                      "images/video.png",
+                      "assets/MediaPlayer.png",
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -153,25 +152,25 @@ stop() {
 }
 
 music1() {
-  print("Follow the Rules... - Laurin Hunter");
+  print("Faded - Alan Walker");
   cache.play(
-    "Follow the Rules... - Laurin Hunter.mp3",
+    "Faded.mp3",
     stayAwake: true,
   );
 }
 
 music2() {
-  print("Bizzair - Bougie (Official Music Video)");
+  print("Alone - Alan Walker");
   cache.play(
-    "Bizzair - Bougie (Official Music Video).mp3",
+    "Alone.mp3",
     stayAwake: true,
   );
 }
 
 music3() {
-  print("Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus");
+  print("Despacito - Daddy Yankee");
   cache.play(
-    "Lil Nas X - Old Town Road (Official Video) ft. Billy Ray Cyrus.mp3",
+    "Despacito.mp3",
     stayAwake: true,
   );
 }
@@ -184,10 +183,9 @@ class MusicPlayer extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        //backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Enjoy music swimmingly..."),
+          title: Text("Music that Soothes your Soul"),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.arrow_back_ios),
@@ -218,7 +216,7 @@ class MusicPlayer extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Image.network(
-                      "https://images.shazam.com/coverart/t482138509-b1474755300_s400.jpg",
+                      "https://cdn2.hubspot.net/hubfs/245581/shutterstock_317819021.jpg",
                       height: 100,
                       width: 100,
                     ),
@@ -230,7 +228,7 @@ class MusicPlayer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "Follow the rules - Laurin Hunter",
+                          "Faded - Alan Walker",
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -274,7 +272,7 @@ class MusicPlayer extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Image.network(
-                      "https://i.scdn.co/image/124b245341f96d108f905253928b0fbc99d0ff0b",
+                      "https://s3-eu-west-1.amazonaws.com/pristine-classical-storage/misc/digitalmusicheadphones.jpg",
                       height: 100,
                       width: 100,
                     ),
@@ -286,7 +284,7 @@ class MusicPlayer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "Bougie - Bizzair",
+                          "Alone - Alan Walker",
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -330,7 +328,7 @@ class MusicPlayer extends StatelessWidget {
                 child: Row(
                   children: <Widget>[
                     Image.network(
-                      "https://www.mtvpersian.net/main/uploads/covers/main1/Lil%20Nas%20X%20%20-%20Old%20Town%20Road%20(ft%20Billy%20Ray%20Cyrus%20Remix)%20.jpg",
+                      "https://www.musitechnic.com/wp-content/uploads/2018/09/music-symbols-.jpg",
                       height: 100,
                       width: 100,
                     ),
@@ -342,7 +340,7 @@ class MusicPlayer extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          "Old Town Road - Lil Nas X",
+                          "Despacito - Daddy Yankee",
                           style: TextStyle(
                             color: Colors.white,
                           ),
@@ -396,7 +394,7 @@ class MoviePlayer extends StatelessWidget {
         backgroundColor: Colors.black,
         appBar: AppBar(
           backgroundColor: Colors.black,
-          title: Text("Enjoy movies swimmingly..."),
+          title: Text("Music that Soothes your soul"),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.arrow_back_ios),
@@ -425,7 +423,7 @@ class MoviePlayer extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Image.network(
-                      "https://www.logolynx.com/images/logolynx/81/81516559c8e5d8fae8a8b898dd00c8bd.jpeg",
+                      "https://images.ctfassets.net/bdyhigkzupmv/6lySzcy7qcIN1tf81Qkus/5b5ac73daeaf61f9057c0b0dd8447a31/hero-guitar-outro.jpg",
                       height: 200,
                       width: double.infinity,
                     ),
@@ -446,7 +444,7 @@ class MoviePlayer extends StatelessWidget {
                 child: Column(
                   children: <Widget>[
                     Image.network(
-                      "https://lh3.googleusercontent.com/proxy/dKWnTSPdWJSxDlZjjHtiT693e8AUcTZmGL7H_AVZ9ztOL6MMmwk5O4I1TWABkPLEpAvK-EQ2KQXZg_sHLKxECdmcx76jw03JxYWq4IjnS1Sd_Tevl-S9QzXZajs5pZozPMbYb6KXfgr4r853kF_RrhA_Br_LQf0V7i22A0YcgGIoHWU4fZ93nEOJX3-AKdW2IMCHNC_XHe25OHscPA4TewxB_Y7TtWC2SHw",
+                      "https://www.thorncreekwinery.com/wp-content/uploads/2019/08/hipjazz.jpg",
                       height: 200,
                       width: double.infinity,
                     ),
